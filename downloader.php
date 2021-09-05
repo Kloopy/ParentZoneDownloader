@@ -37,6 +37,7 @@ do {
 					print "    - Downloading ".$media->type." ".$media->fileName."\n";				
 					downloadFile('https://api.parentzone.me/v1/media/'.$media->id.'/full?key='.$session->key.'&u='.$media->updated, $filename);
 				}
+				touch($filename, strtotime($media->updated));
 			}
 		}
 		if (isset($post->gradedCount)) {
