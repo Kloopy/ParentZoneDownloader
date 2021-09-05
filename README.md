@@ -20,3 +20,6 @@ Within each child's directory, each post will be saved to a separate directory. 
 The post directory will contain `postdata.json`, any media files related to the post and a `gradings.json` if there was an assessment made by nursery staff as part the post.
 
 Additionally, the script will create a `downloads/frameworks/` directory which will contain the detail about each of the frameworks that your child(ren) have been graded against. This is useful as the grading data itself references the framework and lacks context by itself.
+
+## Notes 
+Currently I'm literally using the script to download the data from Parent Zone before the data disappears after a child moving on to school. The script drops a bunch of JSON files for posts, which aren't very human readable.  Potentially the script could be improved to generate a nice webpage for each post, for all posts, for image galleries, etc. but right now it was just about getting the data backed up out of Parent Zone. 
