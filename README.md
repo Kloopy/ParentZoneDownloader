@@ -1,14 +1,14 @@
 # ParentZoneDownloader
 A hacky PHP script to download posts, images, videos and framework grading from Parent Zone
 
-#Pre-Requisites
+## Pre-Requisites
 * Tested on PHP 7.4, but likely compatible with older versions
 * Requires the curl extension to be installed and enabled.
 
-# Configuration
+## Configuration
 Update the variables at the top of the file to configure your email address and password. 
 
-# Running the script
+## Running the script
 Run `php downloader.php`
 
 The script will then login, create a session on the Parent Zone website and starts downloading post data about all your children. It does all this using the underlying json API that the Parent Zone website itself uses. 
